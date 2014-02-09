@@ -96,13 +96,13 @@ SET(DREAM3D_RCS
 )
 
 # -- Run MOC and UIC on the necessary files
-QT4_ADD_RESOURCES( DREAM3D_Generated_RC_SRCS ${DREAM3D_RCS} ${QRC_LICENSE_FILES})
+QT5_ADD_RESOURCES( DREAM3D_Generated_RC_SRCS ${DREAM3D_RCS} ${QRC_LICENSE_FILES})
 
 # this will run uic on .ui files:
-QT4_WRAP_UI( DREAM3D_Generated_UI_HDRS ${DREAM3D_UIS} )
+QT5_WRAP_UI( DREAM3D_Generated_UI_HDRS ${DREAM3D_UIS} )
 
 # and finally this will run moc:
-QT4_WRAP_CPP( DREAM3D_Generated_MOC_SRCS ${DREAM3D_MOC_HDRS} )
+QT5_WRAP_CPP( DREAM3D_Generated_MOC_SRCS ${DREAM3D_MOC_HDRS} )
 
 #-- Put the generated files into their own group for IDEs
 cmp_IDE_GENERATED_PROPERTIES("Generated/ui" "${DREAM3D_Generated_UI_HDRS}" "")

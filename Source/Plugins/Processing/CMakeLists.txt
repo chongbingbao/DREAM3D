@@ -7,11 +7,10 @@ project(Processing)
 set(PLUGIN_NAME Processing)
 
 # --------------------------------------------------------------------
-# Look for Qt 4 as we need it for the plugin GUI to be generated
-if(NOT QT4_FOUND)
-    message(FATAL_ERROR "Qt 4 is Needed for this ${PLUGIN_NAME}Plugin.")
+# Look for Qt 5 as we need it for the plugin GUI to be generated
+if(NOT Qt5Core_FOUND)
+    message(FATAL_ERROR "Qt 5 is Needed for this ${PLUGIN_NAME}Plugin.")
 endif()
-include( ${QT_USE_FILE} )
 
 
 set(${PLUGIN_NAME}_Project_SRCS "")
@@ -151,7 +150,7 @@ cmp_IDE_SOURCE_PROPERTIES( "${PLUGIN_NAME}/" "${${PLUGIN_NAME}_HDRS}" "${${PLUGI
 # --------------------------------------------------------------------
 #
 # --------------------------------------------------------------------
-QT4_WRAP_CPP( ${PLUGIN_NAME}_MODULE_MOC_SRCS ${${PLUGIN_NAME}_HDRS} )
+QT5_WRAP_CPP( ${PLUGIN_NAME}_MODULE_MOC_SRCS ${${PLUGIN_NAME}_HDRS} )
 set_source_files_properties( ${${PLUGIN_NAME}_MODULE_MOC_SRCS} PROPERTIES HEADER_FILE_ONLY TRUE)
 # --------------------------------------------------------------------
 # Group all the generated source files in IDE's that support it. Makes it clear
@@ -282,7 +281,7 @@ set(${PLUGIN_NAME}_CustomWidgets_SRCS
   # ${PROJECT_SOURCE_DIR}/${PLUGIN_NAME}/${PLUGIN_NAME}FiltersWidgets/Q${PLUGIN_NAME}Widget.cpp
 )
 
-QT4_WRAP_UI( ${PLUGIN_NAME}_Generated_UI_HDRS
+QT5_WRAP_UI( ${PLUGIN_NAME}_Generated_UI_HDRS
   # ${PROJECT_SOURCE_DIR}/${PLUGIN_NAME}/${PLUGIN_NAME}FiltersWidgets/Q${PLUGIN_NAME}Widget.ui
 )
 
@@ -290,8 +289,8 @@ QT4_WRAP_UI( ${PLUGIN_NAME}_Generated_UI_HDRS
 # --------------------------------------------------------------------
 # We need to run Qt's moc system on our Qt based files (Anything deriving from QObject)
 # This cmake code sets up moc to be run.
-QT4_WRAP_CPP( ${PLUGIN_NAME}_Generated_MOC_SRCS ${${PLUGIN_NAME}Widget_GEN_HDRS} )
-QT4_WRAP_CPP( ${PLUGIN_NAME}_MOC_SRCS ${${PLUGIN_NAME}_HDRS} ${${PLUGIN_NAME}_CustomWidgets_HDRS})
+QT5_WRAP_CPP( ${PLUGIN_NAME}_Generated_MOC_SRCS ${${PLUGIN_NAME}Widget_GEN_HDRS} )
+QT5_WRAP_CPP( ${PLUGIN_NAME}_MOC_SRCS ${${PLUGIN_NAME}_HDRS} ${${PLUGIN_NAME}_CustomWidgets_HDRS})
 
 # These generated moc files will be #include in the FilterWidget source file that
 # are generated so we need to tell the build system to NOT compile these files
@@ -300,7 +299,7 @@ set_source_files_properties( ${${PLUGIN_NAME}_MOC_SRCS} PROPERTIES HEADER_FILE_O
 
 # --------------------------------------------------------------------
 # -- Create a Qt Resource header file of the documentation html files
-#QT4_ADD_RESOURCES( ${PLUGIN_NAME}_Generated_RC_SRCS "${HtmlDocQrcFile}"  )
+#QT5_ADD_RESOURCES( ${PLUGIN_NAME}_Generated_RC_SRCS "${HtmlDocQrcFile}"  )
 
 # --------------------------------------------------------------------
 # Group all the generated source files in IDE's that support it. Makes it clear

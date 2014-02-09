@@ -5,12 +5,11 @@
 #///////////////////////////////////////////////////////////////////////////////
 project(QtSupport)
 
-if(QT4_FOUND)
-    include( ${QT_USE_FILE} )
-else()
-    message(FATAL_ERROR "Qt 4 is Needed for this project.")
-endif(QT4_FOUND)
-
+# --------------------------------------------------------------------
+# Look for Qt 5 as we need it for the plugin GUI to be generated
+if(NOT Qt5Core_FOUND)
+    message(FATAL_ERROR "Qt 5 is Needed for this ${PLUGIN_NAME}Plugin.")
+endif()
 
 set(Project_SRCS "")
 set(Project_HDRS "")
@@ -69,15 +68,15 @@ cmp_IDE_SOURCE_PROPERTIES( "QtSupport/UI_Files" "${DREAM3D_QT_UI_FILES}" "" "0")
 
 # --------------------------------------------------------------------
 # Run on the files
-#QT4_ADD_RESOURCES( QtSupport_Generated_RC_SRCS ${QCrossCorrelation_RCS} )
+#QT5_ADD_RESOURCES( QtSupport_Generated_RC_SRCS ${QCrossCorrelation_RCS} )
 
 # --------------------------------------------------------------------
 # this will run uic on .ui files:
-QT4_WRAP_UI( QtSupport_Generated_UI_HDRS ${DREAM3D_QT_UI_FILES} )
+QT5_WRAP_UI( QtSupport_Generated_UI_HDRS ${DREAM3D_QT_UI_FILES} )
 
 # --------------------------------------------------------------------
 # and finally this will run moc:
-QT4_WRAP_CPP( QtSupport_Generated_MOC_SRCS ${QtSupport_HDRS} )
+QT5_WRAP_CPP( QtSupport_Generated_MOC_SRCS ${QtSupport_HDRS} )
 
 # --------------------------------------------------------------------
 #-- Put the generated files into their own group for IDEs

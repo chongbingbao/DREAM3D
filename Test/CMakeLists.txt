@@ -67,7 +67,7 @@ macro(ADD_DREAM3D_TEST_2 testname LIBRARIES SOURCES)
   add_test(${testname} ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${testname})
 endmacro()
 
-QT4_WRAP_CPP( _moc_filter_source  GenerateFeatureIds.h)
+QT5_WRAP_CPP( _moc_filter_source  GenerateFeatureIds.h)
 
 
 

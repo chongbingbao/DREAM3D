@@ -54,7 +54,7 @@
 #endif
 
 
-#include <QtCore/QtDebug>
+#include <QtCore/QDebug>
 #include <QtCore/QString>
 #include <QtCore/QVector>
 #include <QtCore/QList>

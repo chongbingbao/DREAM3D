@@ -11,17 +11,33 @@ project(StatsGenerator)
 cmake_minimum_required(VERSION 2.8.9)
 
 # ------------------------------------------------------------------------------
-#  Qt 4 Section
+#  Qt 5 Section
 # ------------------------------------------------------------------------------
-if(QT4_FOUND)
-    set(QT_USE_QTSVG "TRUE")
-    set(QT_USE_QTSCRIPT "TRUE")
-    include( ${QT_USE_FILE} )
-    CMP_COPY_QT4_RUNTIME_LIBRARIES( "QtSvg;QtScript")
-    CMP_QT_LIBRARIES_INSTALL_RULES( "QtSvg;QtScript" "./")
-else()
-    message(FATAL_ERROR "Qt 4 is Needed for this project.")
-endif(QT4_FOUND)
+if(NOT Qt5Core_FOUND)
+    message(FATAL_ERROR "Qt 5 is Needed for this ${PLUGIN_NAME}Plugin.")
+endif()
+
+find_package(Qt5SVG)
+find_package(Qt5Script)
+
+if(NOT Qt5SVG_FOUND)
+    message(FATAL_ERROR "Qt 5 SVG Module is Needed for this ${PLUGIN_NAME}Plugin.")
+endif()
+if(NOT Qt5Script_FOUND)
+    message(FATAL_ERROR "Qt 5 Script Module is Needed for this ${PLUGIN_NAME}Plugin.")
+endif()
+
+if(0)
+	if(QT5_FOUND)
+		set(QT_USE_QTSVG "TRUE")
+		set(QT_USE_QTSCRIPT "TRUE")
+		include( ${QT_USE_FILE} )
+		CMP_COPY_QT5_RUNTIME_LIBRARIES( "QtSvg;QtScript")
+		CMP_QT_LIBRARIES_INSTALL_RULES( "QtSvg;QtScript" "./")
+	else()
+		message(FATAL_ERROR "Qt 4 is Needed for this project.")
+	endif(QT5_FOUND)
+endif()
 
 # ------------------------------------------------------------------------------
 #  Qwt Section
@@ -177,13 +193,13 @@ SET(StatsGenerator_RCS ${PROJECT_RESOURCES_DIR}/icons/images/Icons.qrc)
 #foreach(lic ${QRC_LICENSE_FILES})
 #  message(STATUS "  ${lic}")
 #endforeach(lic ${QRC_LICENSE_FILES})
-QT4_ADD_RESOURCES( Generated_RC_SRCS ${StatsGenerator_RCS} ${QRC_LICENSE_FILES})
+QT5_ADD_RESOURCES( Generated_RC_SRCS ${StatsGenerator_RCS} ${QRC_LICENSE_FILES})
 
 # this will run uic on .ui files:
-QT4_WRAP_UI( Generated_UI_HDRS ${StatsGenerator_UIS} )
+QT5_WRAP_UI( Generated_UI_HDRS ${StatsGenerator_UIS} )
 
 # and finally this will run moc:
-QT4_WRAP_CPP( Generated_MOC_SRCS
+QT5_WRAP_CPP( Generated_MOC_SRCS
             ${StatsGenerator_MOC_HDRS}
             ${StatsGenerator_DELEGATE_HDRS}
             ${StatsGenerator_TABLEMODEL_HDRS}
