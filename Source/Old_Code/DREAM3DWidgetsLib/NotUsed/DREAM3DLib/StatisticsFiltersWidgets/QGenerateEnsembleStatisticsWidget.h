@@ -40,7 +40,7 @@
 #include <QtCore/QObject>
 #include <QtCore/QSettings>
 #include <QtCore/QUrl>
-#include <QtGui/QWidget>
+#include <QtWidgets/QWidget>
 
 #include "DREAM3DLib/DREAM3DLib.h"
 #include "DREAM3DLib/DataContainers/VolumeDataContainer.h"

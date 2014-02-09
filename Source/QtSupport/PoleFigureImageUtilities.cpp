@@ -36,9 +36,9 @@
 
 #include "PoleFigureImageUtilities.h"
 #include <QtCore/QDebug>
-#include <QtGui/QColor>
-#include <QtGui/QPainter>
-#include <QtGui/QFont>
+#include <QtWidgets/QColor>
+#include <QtWidgets/QPainter>
+#include <QtWidgets/QFont>
 
 #include "DREAM3DLib/DREAM3DLib.h"
 #include "DREAM3DLib/Math/DREAM3DMath.h"

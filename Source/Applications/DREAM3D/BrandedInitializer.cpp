@@ -38,9 +38,9 @@
 #include <QtCore/QTime>
 #include <QtCore/QPluginLoader>
 #include <QtCore/QCoreApplication>
-#include <QtGui/QSplashScreen>
-#include <QtGui/QBitMap>
-#include <QtGui/QMessageBox>
+#include <QtWidgets/QSplashScreen>
+#include <QtWidgets/QBitMap>
+#include <QtWidgets/QMessageBox>
 
 
 
@@ -202,7 +202,7 @@ void BrandedInitializer::loadPlugins()
 #endif
       {
         pluginFilePaths << aPluginDir.absoluteFilePath(fileName);
-        //qWarning(aPluginDir.absoluteFilePath(fileName).toAscii(), "%s");
+        //qWarning(aPluginDir.absoluteFilePath(fileName).toLatin1(), "%s");
         //qDebug() << "Adding " << aPluginDir.absoluteFilePath(fileName)() << "\n";
       }
     }

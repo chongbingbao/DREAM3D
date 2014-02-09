@@ -37,8 +37,8 @@
 #define _QDREAM3D_DOCUMENTS_DOCKWIDGET_H_
 
 #include <QtCore/QFileInfo>
-#include <QtGui/QDockWidget>
-#include <QtGui/QTreeWidgetItem>
+#include <QtWidgets/QDockWidget>
+#include <QtWidgets/QTreeWidgetItem>
 
 
 #include "DREAM3DLib/Common/FilterManager.h"

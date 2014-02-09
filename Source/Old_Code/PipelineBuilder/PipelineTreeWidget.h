@@ -41,10 +41,10 @@
 #include <QApplication>
 
 
-#include <QtGui/QMenu>
-#include <QtGui/QMouseEvent>
-#include <QtGui/QTreeWidget>
-#include <QtGui/QTreeWidgetItem>
+#include <QtWidgets/QMenu>
+#include <QtWidgets/QMouseEvent>
+#include <QtWidgets/QTreeWidget>
+#include <QtWidgets/QTreeWidgetItem>
 
 class PipelineBuilderWidget;
 class QAction;

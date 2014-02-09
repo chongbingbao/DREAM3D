@@ -41,9 +41,9 @@
 #include <QtCore/QObject>
 #include <QtCore/QString>
 #include <QtCore/QVector>
-#include <QtGui/QMainWindow>
-#include <QtGui/QTreeWidgetItem>
-#include <QtGui/QCloseEvent>
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QTreeWidgetItem>
+#include <QtWidgets/QCloseEvent>
 #include <QtCore/QSettings>
 
 #include "ui_PluginMaker.h"

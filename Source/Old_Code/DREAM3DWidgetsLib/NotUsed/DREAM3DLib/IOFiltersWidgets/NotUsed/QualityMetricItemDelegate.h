@@ -42,12 +42,12 @@
 
 #include <QtCore/QModelIndex>
 #include <QtCore/QStringList>
-#include <QtGui/QComboBox>
-#include <QtGui/QPainter>
-#include <QtGui/QStyleOptionViewItemV4>
-#include <QtGui/QLineEdit>
-#include <QtGui/QDoubleValidator>
-#include <QtGui/QStyledItemDelegate>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QPainter>
+#include <QtWidgets/QStyleOptionViewItemV4>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QDoubleValidator>
+#include <QtWidgets/QStyledItemDelegate>
 
 #include "QualityMetricTableModel.h"
 

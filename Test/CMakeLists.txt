@@ -108,12 +108,15 @@ endif()
 # ReplaceText Program
 # --------------------------------------------------------------------------
 add_executable(ReplaceText ${DREAM3DTest_SOURCE_DIR}/ReplaceText.cpp)
-target_link_libraries(ReplaceText ${QT_QTCORE_LIBRARY})
+target_link_libraries(ReplaceText)
+qt5_use_modules(ReplaceText Core)
+
 set_target_properties(ReplaceText PROPERTIES FOLDER Test)
 
 # --------
 add_executable(ODFTest ${DREAM3DTest_SOURCE_DIR}/ODFTest.cpp)
 target_link_libraries(ODFTest DREAM3DLib)
+qt5_use_modules(ODFTest Core)
 set_target_properties(ODFTest PROPERTIES FOLDER Test)
 
 # --------
@@ -123,6 +126,7 @@ set_target_properties(VoxelTest PROPERTIES FOLDER Test)
 # --------
 add_executable(TextureTest ${DREAM3DTest_SOURCE_DIR}/TextureTest.cpp)
 target_link_libraries(TextureTest DREAM3DLib)
+qt5_use_modules(TextureTest Core)
 set_target_properties(TextureTest PROPERTIES FOLDER Test)
 
 
@@ -130,17 +134,20 @@ set_target_properties(TextureTest PROPERTIES FOLDER Test)
 if(0)
 add_executable(SurfaceMeshTest ${DREAM3DTest_SOURCE_DIR}/SurfaceMeshTest.cpp)
 target_link_libraries(SurfaceMeshTest DREAM3DLib)
+qt5_use_modules(SurfaceMeshTest Core)
 set_target_properties(SurfaceMeshTest PROPERTIES FOLDER Test)
 endif()
 
 # --------
 add_executable(RNGTest ${DREAM3DTest_SOURCE_DIR}/RNGTest.cpp)
 target_link_libraries(RNGTest DREAM3DLib)
+qt5_use_modules(RNGTest Core)
 set_target_properties(RNGTest PROPERTIES FOLDER Test)
 
 # --------
 add_executable(ResFixer ${DREAM3DTest_SOURCE_DIR}/ResFixer.cpp)
 target_link_libraries(ResFixer ${QT_QTCORE_LIBRARY} EbsdLib DREAM3DLib)
+qt5_use_modules(ResFixer Core)
 set_target_properties(ResFixer PROPERTIES FOLDER Test)
 
 
@@ -150,6 +157,7 @@ if(0)
 # sets that are larger than 4GB in size
 add_executable(BigHDF5DatasetTest ${DREAM3DTest_SOURCE_DIR}/BigHDF5DatasetTest.cpp)
 target_link_libraries(BigHDF5DatasetTest H5Support ${QT_QTCORE_LIBRARY})
+qt5_use_modules(BigHDF5DatasetTest Core)
 set_target_properties(BigHDF5DatasetTest PROPERTIES FOLDER Test)
 add_test(BigHDF5DatasetTest ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/BigHDF5DatasetTest)
 

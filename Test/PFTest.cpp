@@ -39,8 +39,8 @@
 #include <QtCore/QVector>
 #include <QtCore/QDir>
 
-#include <QtGui/QApplication>
-#include <QtGui/QImage>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QImage>
 
 #include "EbsdLib/EbsdLib.h"
 #include "EbsdLib/EbsdConstants.h"

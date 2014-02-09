@@ -37,10 +37,10 @@
 #include "FilterInputDockWidget.h"
 
 #include <QtCore/QFileInfo>
-#include <QtGui/QLabel>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QFormLayout>
-#include <QtGui/QLineEdit>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QFormLayout>
+#include <QtWidgets/QLineEdit>
 
 #include "DREAM3DWidgetsLib/FilterWidgetManager.h"
 

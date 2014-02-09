@@ -35,14 +35,14 @@
 
 //-- Qt Includes
 #include <QtCore/QPoint>
-#include <QtGui/QMainWindow>
-#include <QtGui/QTableWidget>
-#include <QtGui/QPixmap>
-#include <QtGui/QGraphicsItem>
-#include <QtGui/QGraphicsScene>
-#include <QtGui/QGraphicsView>
-#include <QtGui/QHeaderView>
-#include <QtGui/QGraphicsPixmapItem>
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QTableWidget>
+#include <QtWidgets/QPixmap>
+#include <QtWidgets/QGraphicsItem>
+#include <QtWidgets/QGraphicsScene>
+#include <QtWidgets/QGraphicsView>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QGraphicsPixmapItem>
 
 
 

@@ -42,7 +42,7 @@
 #include <QtCore/QString>
 #include <QtCore/QSettings>
 #include <QtCore/QUrl>
-#include <QtGui/QFileDialog>
+#include <QtWidgets/QFileDialog>
 
 
 #include "DREAM3DLib/DREAM3DLib.h"

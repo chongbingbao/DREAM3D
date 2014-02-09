@@ -38,7 +38,7 @@
 
 #include <QtCore/QString>
 #include <QtCore/QSettings>
-#include <QtGui/QWidget>
+#include <QtWidgets/QWidget>
 
 #include "ui_AxisAngleWidget.h"
 

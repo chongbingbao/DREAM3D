@@ -37,8 +37,8 @@
 
 #include <QtCore/QDir>
 
-#include <QtGui/QDesktopServices>
-#include <QtGui/QMessageBox>
+#include <QtWidgets/QDesktopServices>
+#include <QtWidgets/QMessageBox>
 
 #include "DREAM3DHelpUrlGenerator.h"
 
@@ -118,7 +118,7 @@ void DREAM3DHelpUrlGenerator::openHTMLUrl(QUrl URL, QWidget* parent)
   if(false == didOpen)
   {
     QMessageBox::critical(parent, "Error Opening Help File",
-                          QString::fromAscii("DREAM3D could not open the help file path ") + URL.path(),
+                          QString::fromLatin1("DREAM3D could not open the help file path ") + URL.path(),
                           QMessageBox::Ok, QMessageBox::Ok);
   }
 }

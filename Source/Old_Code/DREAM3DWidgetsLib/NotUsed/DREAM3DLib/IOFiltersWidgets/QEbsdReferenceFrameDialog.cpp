@@ -43,12 +43,12 @@
 #include <QtCore/QtEndian>
 #include <QtCore/QStateMachine>
 
-#include <QtGui/QPixmap>
-#include <QtGui/QGraphicsPixmapItem>
-#include <QtGui/QPushButton>
-#include <QtGui/QColor>
-#include <QtGui/QPainter>
-#include <QtGui/QFont>
+#include <QtWidgets/QPixmap>
+#include <QtWidgets/QGraphicsPixmapItem>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QColor>
+#include <QtWidgets/QPainter>
+#include <QtWidgets/QFont>
 
 #include "DREAM3DLib/DataContainers/VolumeDataContainer.h"
 #include "DREAM3DLib/DataArrays/DataArray.hpp"

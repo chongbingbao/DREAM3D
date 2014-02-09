@@ -41,25 +41,25 @@
 #include <QtCore/QTimer>
 #include <QtCore/QResource>
 
-#include <QtGui/QFrame>
-#include <QtGui/QSpinBox>
-#include <QtGui/QLabel>
-#include <QtGui/QCheckBox>
-#include <QtGui/QLineEdit>
-#include <QtGui/QIntValidator>
-#include <QtGui/QDoubleValidator>
-#include <QtGui/QComboBox>
-#include <QtGui/QApplication>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QFormLayout>
-#include <QtGui/QGridLayout>
-#include <QtGui/QPainter>
-#include <QtGui/QPushButton>
-#include <QtGui/QFileDialog>
-#include <QtGui/QMouseEvent>
-#include <QtGui/QDesktopServices>
-#include <QtGui/QMessageBox>
+#include <QtWidgets/QFrame>
+#include <QtWidgets/QSpinBox>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QIntValidator>
+#include <QtWidgets/QDoubleValidator>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QFormLayout>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QPainter>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QFileDialog>
+#include <QtWidgets/QMouseEvent>
+#include <QtWidgets/QDesktopServices>
+#include <QtWidgets/QMessageBox>
 
 
 #include "QtSupport/QR3DFileCompleter.h"
@@ -522,9 +522,9 @@ void QFilterWidget::setupGui()
       theSlot.append("(const QString &)");
       // qDebug() << getFilter()->getNameOfClass() << " - Slot Generated: " << theSlot() << "\n";
       QObject::connect(com, SIGNAL(activated(const QString&)),
-                       this, theSlot.toAscii());
+                       this, theSlot.toLatin1());
       QObject::connect(fp, SIGNAL(textChanged(const QString&)),
-                       this, theSlot.toAscii());
+                       this, theSlot.toLatin1());
       gridLayout->addWidget(fp, 0, 1, 1, 1);
 
       QPushButton* btn = new QPushButton("Select...");
@@ -551,9 +551,9 @@ void QFilterWidget::setupGui()
       theSlot.append("(const QString &)");
       // qDebug() << getFilter()->getNameOfClass() << " - Slot Generated: " << theSlot() << "\n";
       QObject::connect(com, SIGNAL(activated(const QString&)),
-                       this, theSlot.toAscii());
+                       this, theSlot.toLatin1());
       QObject::connect(fp, SIGNAL(textChanged(const QString&)),
-                       this, theSlot.toAscii());
+                       this, theSlot.toLatin1());
       //      connect(fp, SIGNAL(textChanged(const QString &)),
       //              this, SLOT(updateLineEdit(const QString &)));
 
@@ -583,7 +583,7 @@ void QFilterWidget::setupGui()
       theSlot.append((option->getPropertyName()));
       theSlot.append("(const QString &)");
       QObject::connect(fp, SIGNAL(textChanged(const QString&)),
-                       this, theSlot.toAscii());
+                       this, theSlot.toLatin1());
       gridLayout->addWidget(fp, 0, 1, 1, 1);
       QPushButton* btn = new QPushButton("Save As...");
       btn->setObjectName(("btn_" + option->getPropertyName()));
@@ -609,7 +609,7 @@ void QFilterWidget::setupGui()
       theSlot.append("(const QString &)");
 
       QObject::connect(fp, SIGNAL(textChanged(const QString&)),
-                       this, theSlot.toAscii());
+                       this, theSlot.toLatin1());
       gridLayout->addWidget(fp, 0, 1, 1, 1);
 
       QPushButton* btn = new QPushButton("Select Folder...");
@@ -1109,7 +1109,7 @@ void QFilterWidget::updateIntVec3Widget(const QString& v)
 
   QVariant variant;
   variant.setValue(value);
-  setProperty(baseName.toAscii(), variant);
+  setProperty(baseName.toLatin1(), variant);
 }
 
 
@@ -1167,7 +1167,7 @@ void QFilterWidget::updateFloatVec3Widget(const QString& v)
 
   QVariant variant;
   variant.setValue(value);
-  setProperty(baseName.toAscii(), variant);
+  setProperty(baseName.toLatin1(), variant);
 }
 
 // -----------------------------------------------------------------------------

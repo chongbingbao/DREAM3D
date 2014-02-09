@@ -38,7 +38,7 @@
 
 #include <QtCore/QObject>
 #include <QtCore/QVector>
-#include <QtGui/QImage>
+#include <QtWidgets/QImage>
 
 /**
  * @class PoleFigureData PoleFigureData.h StatsGenerator/PoleFigureData.h

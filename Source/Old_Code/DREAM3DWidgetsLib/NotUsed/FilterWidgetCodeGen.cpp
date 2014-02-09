@@ -529,10 +529,10 @@ void createSourceFile( const QString& group,
   }
   fprintf(f, "#include \"%s/%sWidgets/Q%sWidget.h\"\n", FILTER_INCLUDE_PREFIX().toLatin1().data(), group.toLatin1().data(), filter.toLatin1().data());
   fprintf(f, "#include <QtCore/QDir>\n");
-  fprintf(f, "#include <QtGui/QApplication>\n");
-  fprintf(f, "#include <QtGui/QLineEdit>\n");
-  fprintf(f, "#include <QtGui/QCheckBox>\n");
-  fprintf(f, "#include <QtGui/QComboBox>\n\n");
+  fprintf(f, "#include <QtWidgets/QApplication>\n");
+  fprintf(f, "#include <QtWidgets/QLineEdit>\n");
+  fprintf(f, "#include <QtWidgets/QCheckBox>\n");
+  fprintf(f, "#include <QtWidgets/QComboBox>\n\n");
   fprintf(f, "#include \"QtSupport/DREAM3DHelpUrlGenerator.h\"\n");
   fprintf(f, "#include \"QtSupport/QFSDropLineEdit.h\"\n\n");
   for (size_t i = 0; i < options.size(); ++i)

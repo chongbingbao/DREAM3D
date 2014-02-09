@@ -40,8 +40,8 @@
 #include <QtCore/QSettings>
 #include <QtCore/QUrl>
 
-#include <QtGui/QGroupBox>
-#include <QtGui/QMenu>
+#include <QtWidgets/QGroupBox>
+#include <QtWidgets/QMenu>
 
 #include "DREAM3DLib/Common/AbstractFilter.h"
 

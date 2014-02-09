@@ -41,11 +41,11 @@
 
 #include <QtCore/QtDebug>
 
-#include <QtGui/QMouseEvent>
-#include <QtGui/QDropEvent>
-#include <QtGui/QDragEnterEvent>
-#include <QtGui/QDragLeaveEvent>
-#include <QtGui/QDragMoveEvent>
+#include <QtWidgets/QMouseEvent>
+#include <QtWidgets/QDropEvent>
+#include <QtWidgets/QDragEnterEvent>
+#include <QtWidgets/QDragLeaveEvent>
+#include <QtWidgets/QDragMoveEvent>
 
 
 // -----------------------------------------------------------------------------

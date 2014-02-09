@@ -42,10 +42,10 @@
 #include <QtCore/QResource>
 #include <QtCore/QDir>
 
-#include <QtGui/QLabel>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QMouseEvent>
-#include <QtGui/QPainter>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QMouseEvent>
+#include <QtWidgets/QPainter>
 
 
 #include "QtSupport/DREAM3DHelpUrlGenerator.h"

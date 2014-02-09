@@ -38,8 +38,8 @@
 
 #include <iostream>
 
-#include <QtGui/QLabel>
-#include <QtGui/QTableWidgetItem>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QTableWidgetItem>
 
 #include "QtSupport/DREAM3DHelpUrlGenerator.h"
 

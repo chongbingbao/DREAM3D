@@ -41,7 +41,7 @@
 #include <set>
 
 #include <QtCore/QSettings>
-#include <QtGui/QWidget>
+#include <QtWidgets/QWidget>
 
 
 #include "ui_ComparisonSelectionWidget.h"

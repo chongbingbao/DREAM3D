@@ -40,12 +40,12 @@
 #include <QtCore/QUrl>
 
 
-#include <QtGui/QApplication>
-#include <QtGui/QPainter>
-#include <QtGui/QPrinter>
-#include <QtGui/QTextBrowser>
-#include <QtGui/QPrintEngine>
-#include <QtGui/QAbstractTextDocumentLayout>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QPainter>
+#include <QtWidgets/QPrinter>
+#include <QtWidgets/QTextBrowser>
+#include <QtWidgets/QPrintEngine>
+#include <QtWidgets/QAbstractTextDocumentLayout>
 
 
 

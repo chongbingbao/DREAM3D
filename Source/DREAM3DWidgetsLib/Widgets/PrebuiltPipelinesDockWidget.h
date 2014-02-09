@@ -37,7 +37,7 @@
 #define _PrebuiltPipelinesDockWidget_H_
 
 #include <QtCore/QDir>
-#include <QtGui/QDockWidget>
+#include <QtWidgets/QDockWidget>
 
 
 

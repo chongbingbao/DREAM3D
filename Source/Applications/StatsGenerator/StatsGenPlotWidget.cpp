@@ -45,8 +45,8 @@
 #include <limits>
 
 //-- Qt Includes
-#include <QtGui/QMessageBox>
-#include <QtGui/QAbstractItemDelegate>
+#include <QtWidgets/QMessageBox>
+#include <QtWidgets/QAbstractItemDelegate>
 
 //-- Qwt Includes
 #include <qwt.h>

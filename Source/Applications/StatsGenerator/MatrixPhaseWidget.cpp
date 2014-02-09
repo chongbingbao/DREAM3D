@@ -46,7 +46,7 @@
 #include <QtCore/QRunnable>
 #include <QtCore/QThreadPool>
 #include <QtCore/QtConcurrentRun>
-#include <QtGui/QMessageBox>
+#include <QtWidgets/QMessageBox>
 
 
 //-- Qwt Includes

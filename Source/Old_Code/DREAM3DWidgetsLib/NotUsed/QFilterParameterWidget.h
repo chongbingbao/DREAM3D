@@ -1,7 +1,7 @@
 #ifndef _QFilterParameterWidget_H_
 #define _QFilterParameterWidget_H_
 
-#include <QtGui/QWidget>
+#include <QtWidgets/QWidget>
 
 #include "FilterWidgetsLib/FilterWidgetsLib.h"
 

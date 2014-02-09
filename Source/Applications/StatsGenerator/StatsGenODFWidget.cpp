@@ -51,10 +51,10 @@
 #include <QtCore/QString>
 #include <QtCore/QSettings>
 
-#include <QtGui/QCloseEvent>
-#include <QtGui/QMessageBox>
-#include <QtGui/QFileDialog>
-#include <QtGui/QAbstractItemDelegate>
+#include <QtWidgets/QCloseEvent>
+#include <QtWidgets/QMessageBox>
+#include <QtWidgets/QFileDialog>
+#include <QtWidgets/QAbstractItemDelegate>
 
 #include "DREAM3DLib/Common/Texture.hpp"
 #include "DREAM3DLib/Common/StatsGen.hpp"

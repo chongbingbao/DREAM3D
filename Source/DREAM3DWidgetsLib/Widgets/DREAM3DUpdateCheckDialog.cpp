@@ -44,7 +44,7 @@
 #include <QtCore/QDir>
 #include <QtCore/QDate>
 
-#include <QtGui/QDesktopServices>
+#include <QtWidgets/QDesktopServices>
 
 #include <QtNetwork/QNetworkAccessManager>
 #include <QtNetwork/QNetworkRequest>

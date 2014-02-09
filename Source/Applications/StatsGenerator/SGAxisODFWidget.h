@@ -38,8 +38,8 @@
 #define _SG_AXIS_ODFWIDGET_H_
 
 #include <QtCore/QFutureWatcher>
-#include <QtGui/QImage>
-#include <QtGui/QWidget>
+#include <QtWidgets/QImage>
+#include <QtWidgets/QWidget>
 
 #include "ui_SGAxisODFWidget.h"
 

@@ -43,7 +43,7 @@
 #include <iostream>
 
 //-- Qt Includes
-#include <QtGui/QAbstractItemDelegate>
+#include <QtWidgets/QAbstractItemDelegate>
 #include <QtCore/QtConcurrentMap>
 #include <QtCore/QFileInfo>
 #include <QtCore/QFile>
@@ -51,9 +51,9 @@
 #include <QtCore/QString>
 #include <QtCore/QSettings>
 #include <QtCore/QVector>
-#include <QtGui/QCloseEvent>
-#include <QtGui/QMessageBox>
-#include <QtGui/QFileDialog>
+#include <QtWidgets/QCloseEvent>
+#include <QtWidgets/QMessageBox>
+#include <QtWidgets/QFileDialog>
 
 
 #include <qwt.h>

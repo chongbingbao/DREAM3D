@@ -43,8 +43,8 @@
 #include <QtCore/QFileInfo>
 #include <QtCore/QDir>
 
-#include <QtGui/QColor>
-#include <QtGui/QApplication>
+#include <QtWidgets/QColor>
+#include <QtWidgets/QApplication>
 
 
 // TCLAP Includes

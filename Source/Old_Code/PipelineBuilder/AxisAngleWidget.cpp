@@ -39,7 +39,7 @@
 #include <iostream>
 #include <fstream>
 
-#include <QtGui/QFileDialog>
+#include <QtWidgets/QFileDialog>
 
 
 #include "AxisAngleTableModel.h"

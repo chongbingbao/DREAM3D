@@ -36,7 +36,7 @@
 #ifndef SGWIDGET_H_
 #define SGWIDGET_H_
 
-#include <QtGui/QWidget>
+#include <QtWidgets/QWidget>
 
 
 #include "DREAM3DLib/Common/Constants.h"

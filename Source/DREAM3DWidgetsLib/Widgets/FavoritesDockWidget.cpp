@@ -42,10 +42,10 @@
 #include <QtCore/QString>
 #include <QtCore/QUrl>
 
-#include <QtGui/QMessageBox>
-#include <QtGui/QDesktopServices>
-#include <QtGui/QTreeWidgetItem>
-#include <QtGui/QMenu>
+#include <QtWidgets/QMessageBox>
+#include <QtWidgets/QDesktopServices>
+#include <QtWidgets/QTreeWidgetItem>
+#include <QtWidgets/QMenu>
 
 #include "DREAM3DLib/Common/IFilterFactory.hpp"
 #include "DREAM3DLib/Common/FilterFactory.hpp"

@@ -42,9 +42,9 @@
 #include <QtCore/QString>
 #include <QtCore/QSettings>
 
-#include <QtGui/QTreeWidget>
-#include <QtGui/QListWidgetItem>
-#include <QtGui/QTreeWidgetItem>
+#include <QtWidgets/QTreeWidget>
+#include <QtWidgets/QListWidgetItem>
+#include <QtWidgets/QTreeWidgetItem>
 
 
 #include "DREAM3DLib/Common/IFilterFactory.hpp"

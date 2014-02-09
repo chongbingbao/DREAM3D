@@ -1,7 +1,7 @@
 
 
 
-#include <QtGui/QImageReader>
+#include <QtWidgets/QImageReader>
 
 #include "DREAM3DLib/DataArrays/DataArray.hpp"
 #include "DREAM3DLib/Common/ModifiedLambertProjection.h"

@@ -33,8 +33,8 @@
 
 
 #include <QtCore/QDir>
-#include <QtGui/QFileDialog>
-#include <QtGui/QCheckBox>
+#include <QtWidgets/QFileDialog>
+#include <QtWidgets/QCheckBox>
 
 #include "QtSupport/QCheckboxDialog.h"
 #include "QtSupport/QR3DFileCompleter.h"

@@ -37,7 +37,7 @@
 #define _ArraySelectionWidget_H_
 
 #include <QtCore/QSettings>
-#include <QtGui/QTabWidget>
+#include <QtWidgets/QTabWidget>
 
 #include "ui_ArraySelectionWidget.h"
 

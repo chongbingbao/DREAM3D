@@ -33,11 +33,11 @@
 #include "QtGui/QGraphicsView"
 #include "QtGui/QGraphicsScene"
 #include "QtGui/QGraphicsProxyWidget"
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QSpacerItem>
-#include <QtGui/QPushButton>
-#include <QtGui/QScrollArea>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QScrollArea>
 
 #include "DREAM3DLib/DREAM3DLib.h"
 #include "DREAM3DLib/Common/DREAM3DSetGetMacros.h"

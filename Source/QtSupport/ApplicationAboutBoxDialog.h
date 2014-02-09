@@ -37,7 +37,7 @@
 #ifndef R3DApplicationAboutBoxDialog_H_
 #define R3DApplicationAboutBoxDialog_H_
 
-#include <QtGui/QDialog>
+#include <QtWidgets/QDialog>
 
 //-- UIC generated Header
 #include <ui_ApplicationAboutBoxDialog.h>

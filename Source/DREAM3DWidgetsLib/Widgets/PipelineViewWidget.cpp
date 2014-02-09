@@ -41,17 +41,17 @@
 #include <QtCore/QFileInfo>
 #include <QtCore/QUrl>
 #include <QtCore/QDir>
-#include <QtGui/QMouseEvent>
-#include <QtGui/QDropEvent>
-#include <QtGui/QDragEnterEvent>
-#include <QtGui/QDragLeaveEvent>
-#include <QtGui/QDragMoveEvent>
-#include <QtGui/QLabel>
-#include <QtGui/QPixmap>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QScrollArea>
-#include <QtGui/QScrollBar>
+#include <QtWidgets/QMouseEvent>
+#include <QtWidgets/QDropEvent>
+#include <QtWidgets/QDragEnterEvent>
+#include <QtWidgets/QDragLeaveEvent>
+#include <QtWidgets/QDragMoveEvent>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QPixmap>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QScrollArea>
+#include <QtWidgets/QScrollBar>
 
 
 #include "DREAM3DLib/DREAM3DLib.h"

@@ -37,7 +37,7 @@
 #define _FilterInputDockWidget_H_
 
 
-#include <QtGui/QWidget>
+#include <QtWidgets/QWidget>
 
 #include "DREAM3DLib/Common/AbstractFilter.h"
 

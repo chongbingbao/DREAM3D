@@ -71,7 +71,7 @@ int main (int argc, char *argv[])
 #else
 
 
-#include <QtGui/QApplication>
+#include <QtWidgets/QApplication>
 #include "BrandedInitializer.h"
 
 #ifdef Q_WS_X11

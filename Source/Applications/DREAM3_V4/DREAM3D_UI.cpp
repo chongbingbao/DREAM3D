@@ -45,12 +45,12 @@
 #include <QtCore/QThread>
 #include <QtCore/QFileInfoList>
 #include <QtCore/QDateTime>
-#include <QtGui/QApplication>
-#include <QtGui/QFileDialog>
-#include <QtGui/QCloseEvent>
-#include <QtGui/QMessageBox>
-#include <QtGui/QListWidget>
-#include <QtGui/QDesktopServices>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QFileDialog>
+#include <QtWidgets/QCloseEvent>
+#include <QtWidgets/QMessageBox>
+#include <QtWidgets/QListWidget>
+#include <QtWidgets/QDesktopServices>
 
 //-- DREAM3D Includes
 #include "DREAM3DLib/DREAM3DVersion.h"
@@ -172,8 +172,8 @@ void DREAM3D_UI::on_actionSave_Pipeline_2_triggered() {
     QFile f(filePath);
     if (f.remove() == false)
     {
-      QMessageBox::warning ( this, QString::fromAscii("File Save Error"),
-                             QString::fromAscii("There was an error removing the existing Pipeline file. The pipeline was NOT saved.") );
+      QMessageBox::warning ( this, QString::fromLatin1("File Save Error"),
+                             QString::fromLatin1("There was an error removing the existing Pipeline file. The pipeline was NOT saved.") );
       return;
     }
   }
@@ -673,7 +673,7 @@ void DREAM3D_UI::loadPlugins(FilterManager *fm)
 #endif
       {
         pluginFilePaths << aPluginDir.absoluteFilePath(fileName);
-        //qWarning(aPluginDir.absoluteFilePath(fileName).toAscii(), "%s");
+        //qWarning(aPluginDir.absoluteFilePath(fileName).toLatin1(), "%s");
         //qDebug() << "Adding " << aPluginDir.absoluteFilePath(fileName)() << "\n";
       }
     }
@@ -742,7 +742,7 @@ void DREAM3D_UI::populateMenus(QObject *plugin)
   {
     m_LoadedPlugins.push_back(ipPlugin);
 #ifdef QT_DEBUG
-    qWarning(ipPlugin->getPluginName().toAscii(), "%s");
+    qWarning(ipPlugin->getPluginName().toLatin1(), "%s");
 #endif
     QIcon newIcon = ipPlugin->icon();
 

@@ -34,8 +34,8 @@
 
 //-- Qt Includes
 #include <QtCore/QObject>
-#include <QtGui/QGraphicsPixmapItem>
-#include <QtGui/QPainter>
+#include <QtWidgets/QGraphicsPixmapItem>
+#include <QtWidgets/QPainter>
 
 
 //-- STL Includes

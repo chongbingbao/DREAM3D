@@ -36,7 +36,7 @@
 #ifndef _FilterListDockWidget_H_
 #define _FilterListDockWidget_H_
 
-#include <QtGui/QWidget>
+#include <QtWidgets/QWidget>
 
 #include "DREAM3DWidgetsLib/DREAM3DWidgetsLib.h"
 

@@ -130,8 +130,9 @@ if(DEFINED DREAM3DProj_BINARY_DIR)
 
     add_library(${PROJECT_NAME} ${LIB_TYPE} ${EbsdLib_PROJECT_SRCS})
 
-    target_link_libraries(${PROJECT_NAME} ${HDF5_LIBRARIES} H5Support ${QT_QTCORE_LIBRARY})
-
+    target_link_libraries(${PROJECT_NAME} ${HDF5_LIBRARIES} H5Support)
+    qt5_use_modules(${PROJECT_NAME} Core)
+    
     LibraryProperties( ${PROJECT_NAME}  ${EXE_DEBUG_EXTENSION} )
 
     set(install_dir "tools")

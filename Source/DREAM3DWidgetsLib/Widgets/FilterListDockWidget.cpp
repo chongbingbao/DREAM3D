@@ -36,7 +36,7 @@
 #include "FilterListDockWidget.h"
 
 #include <QtCore/QFileInfo>
-#include <QtGui/QTreeWidgetItem>
+#include <QtWidgets/QTreeWidgetItem>
 
 #include "DREAM3DLib/Common/FilterManager.h"
 #include "DREAM3DLib/Common/IFilterFactory.hpp"

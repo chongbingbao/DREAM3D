@@ -34,12 +34,12 @@
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #include "PrimaryRecrystallizedPresetDialog.h"
-#include <QtGui/QFormLayout>
-#include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
-#include <QtGui/QDialogButtonBox>
-#include <QtGui/QDoubleValidator>
-#include <QtGui/QApplication>
+#include <QtWidgets/QFormLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QDialogButtonBox>
+#include <QtWidgets/QDoubleValidator>
+#include <QtWidgets/QApplication>
 
 // -----------------------------------------------------------------------------
 //

@@ -39,12 +39,12 @@
 #include <iostream>
 
 #include <QtCore/QModelIndex>
-#include <QtGui/QComboBox>
-#include <QtGui/QPainter>
-#include <QtGui/QStyleOptionViewItemV4>
-#include <QtGui/QLineEdit>
-#include <QtGui/QDoubleValidator>
-#include <QtGui/QStyledItemDelegate>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QPainter>
+#include <QtWidgets/QStyleOptionViewItemV4>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QDoubleValidator>
+#include <QtWidgets/QStyledItemDelegate>
 
 #include "DREAM3DLib/Common/StatsGen.hpp"
 #include "AxisAngleTableModel.h"

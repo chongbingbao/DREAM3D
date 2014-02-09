@@ -42,8 +42,8 @@
 
 #include <QtCore/QDir>
 #include <QtCore/QString>
-#include <QtGui/QImage>
-#include <QtGui/QImageReader>
+#include <QtWidgets/QImage>
+#include <QtWidgets/QImageReader>
 
 // -----------------------------------------------------------------------------
 //

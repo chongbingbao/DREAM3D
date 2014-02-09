@@ -44,13 +44,13 @@
 #include <QtCore/QThread>
 #include <QtCore/QFileInfoList>
 #include <QtCore/QDateTime>
-#include <QtGui/QApplication>
-#include <QtGui/QFileDialog>
-#include <QtGui/QCloseEvent>
-#include <QtGui/QMessageBox>
-#include <QtGui/QListWidget>
-#include <QtGui/QDesktopServices>
-#include <QtGui/QToolButton>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QFileDialog>
+#include <QtWidgets/QCloseEvent>
+#include <QtWidgets/QMessageBox>
+#include <QtWidgets/QListWidget>
+#include <QtWidgets/QDesktopServices>
+#include <QtWidgets/QToolButton>
 
 //-- DREAM3D Includes
 #include "DREAM3DLib/DREAM3DVersion.h"
@@ -188,8 +188,8 @@ void DREAM3D_UI::on_actionSavePipeline_triggered()
     QFile f(filePath);
     if (f.remove() == false)
     {
-      QMessageBox::warning ( this, QString::fromAscii("File Save Error"),
-                             QString::fromAscii("There was an error removing the existing Pipeline file. The pipeline was NOT saved.") );
+      QMessageBox::warning ( this, QString::fromLatin1("File Save Error"),
+                             QString::fromLatin1("There was an error removing the existing Pipeline file. The pipeline was NOT saved.") );
       return;
     }
   }
@@ -802,7 +802,7 @@ void DREAM3D_UI::populateMenus(QObject *plugin)
   {
     m_LoadedPlugins.push_back(ipPlugin);
 #ifdef QT_DEBUG
-    qWarning(ipPlugin->getPluginName().toAscii(), "%s");
+    qWarning(ipPlugin->getPluginName().toLatin1(), "%s");
 #endif
     QIcon newIcon = ipPlugin->icon();
 

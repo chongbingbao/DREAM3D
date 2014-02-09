@@ -34,7 +34,7 @@
 #include <QtCore/QPoint>
 #include <QtCore/QList>
 #include <QtCore/QDir>
-#include <QtGui/QMenu>
+#include <QtWidgets/QMenu>
 
 #include "ui_PipelineBuilderWidget.h"
 
