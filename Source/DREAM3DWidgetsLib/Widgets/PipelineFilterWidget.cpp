@@ -419,9 +419,9 @@ void PipelineFilterWidget::updateWidgetStyle()
 
   style.append("border-radius: 10px;");
   style.append("padding: 0 0 0 0px;");
-#if defined(Q_WS_WIN)
+#if defined(Q_OS_WIN)
   style.append("font: 85 italic 10pt \"Arial\";");
-#elif defined(Q_WS_MAC)
+#elif defined(Q_OS_MAC)
   style.append("font: 100 italic 12pt \"Arial\";");
 #else
   style.append("font: 85 italic 9pt \"Arial\";");
