@@ -169,13 +169,8 @@ if(UNIX AND NOT APPLE)
 endif()
 
 add_library(DREAM3DWidgetsLib ${LIB_TYPE} ${Project_SRCS})
-target_link_libraries(DREAM3DWidgetsLib
-                    ${QT_QTCORE_LIBRARY}
-                    ${QT_QTGUI_LIBRARY}
-                    QtSupport
-                    DREAM3DLib
-)
-
+target_link_libraries(DREAM3DWidgetsLib DREAM3DLib QtSupport)
+qt5_use_modules(${PROJECT_NAME} Core Widgets Gui Network)
 LibraryProperties( DREAM3DWidgetsLib ${EXE_DEBUG_EXTENSION})
 
 

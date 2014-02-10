@@ -38,7 +38,7 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QDialogButtonBox>
-#include <QtWidgets/QDoubleValidator>
+#include <QtGui/QDoubleValidator>
 #include <QtWidgets/QApplication>
 
 // -----------------------------------------------------------------------------
@@ -88,7 +88,7 @@ void PrimaryRecrystallizedPresetDialog::setupGui()
   buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
   verticalLayout_2->addWidget(buttonBox);
 
-  percentRecystallizedLabel->setText(QApplication::translate("Percent Recrystallized Preset Dialog", "Percent Recrystallized:", 0, QApplication::UnicodeUTF8));
+  percentRecystallizedLabel->setText(QApplication::translate("Percent Recrystallized Preset Dialog", "Percent Recrystallized:", 0));
 
 
   QObject::connect(buttonBox, SIGNAL(accepted()), this, SLOT(accept()));

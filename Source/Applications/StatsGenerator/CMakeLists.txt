@@ -28,15 +28,15 @@ if(NOT Qt5Script_FOUND)
 endif()
 
 if(0)
-	if(QT5_FOUND)
-		set(QT_USE_QTSVG "TRUE")
-		set(QT_USE_QTSCRIPT "TRUE")
-		include( ${QT_USE_FILE} )
-		CMP_COPY_QT5_RUNTIME_LIBRARIES( "QtSvg;QtScript")
-		CMP_QT_LIBRARIES_INSTALL_RULES( "QtSvg;QtScript" "./")
-	else()
-		message(FATAL_ERROR "Qt 4 is Needed for this project.")
-	endif(QT5_FOUND)
+  if(QT5_FOUND)
+    set(QT_USE_QTSVG "TRUE")
+    set(QT_USE_QTSCRIPT "TRUE")
+    include( ${QT_USE_FILE} )
+    CMP_COPY_QT5_RUNTIME_LIBRARIES( "QtSvg;QtScript")
+    CMP_QT_LIBRARIES_INSTALL_RULES( "QtSvg;QtScript" "./")
+  else()
+    message(FATAL_ERROR "Qt 4 is Needed for this project.")
+  endif(QT5_FOUND)
 endif()
 
 # ------------------------------------------------------------------------------
@@ -259,10 +259,12 @@ BuildQtAppBundle(
     VERSION_MINOR ${DREAM3D_VER_MINOR}
     VERSION_PATCH ${DREAM3D_VER_PATCH}
     BINARY_DIR    ${${PROJECT_NAME}_BINARY_DIR}
-    LINK_LIBRARIES  H5Support EbsdLib DREAM3DLib ${QT_LIBRARIES} QtSupport ${QWT_LIBRARY}
+    LINK_LIBRARIES  H5Support EbsdLib DREAM3DLib QtSupport ${QWT_LIBRARY}
     LIB_SEARCH_DIRS ${CMAKE_LIBRARY_OUTPUT_DIRECTORY} ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}
 #    QT_PLUGINS    ${QT_PLUGINS}
 #    OTHER_PLUGINS ${OTHER_PLUGINS}
     COMPONENT     Applications
     INSTALL_DEST  ${DEST_DIR}
 )
+qt5_use_modules(${PROJECT_NAME} Core Widgets Gui Concurrent)
+

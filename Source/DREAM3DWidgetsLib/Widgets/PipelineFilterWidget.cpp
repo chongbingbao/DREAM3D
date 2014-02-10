@@ -37,16 +37,16 @@
 #include "PipelineFilterWidget.h"
 
 
-
+#include <QtCore/QMimeData>
 #include <QtCore/QTimer>
 #include <QtCore/QResource>
 #include <QtCore/QDir>
 
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QVBoxLayout>
-#include <QtWidgets/QMouseEvent>
-#include <QtWidgets/QPainter>
-
+#include <QtGui/QMouseEvent>
+#include <QtGui/QPainter>
+#include <QtGui/QDrag>
 
 #include "QtSupport/DREAM3DHelpUrlGenerator.h"
 
@@ -62,7 +62,7 @@
 // -----------------------------------------------------------------------------
 // Include the "moc" file that was generated for this file
 // -----------------------------------------------------------------------------
-#include "DREAM3DWidgetsLib/Widgets/moc_PipelineFilterWidget.cxx"
+#include "DREAM3DWidgetsLib/Widgets/moc_PipelineFilterWidget.cpp"
 
 #define PADDING 5
 #define BORDER 2

@@ -40,10 +40,7 @@
 #include "DREAM3DLib/Common/IFilterFactory.hpp"
 #include "DREAM3DLib/Common/FilterFactory.hpp"
 
-
-#include "moc_SurfaceMeshingPlugin.cxx"
-
-Q_EXPORT_PLUGIN2(SurfaceMeshingPlugin, SurfaceMeshingPlugin)
+#include "moc_SurfaceMeshingPlugin.cpp"
 
 namespace Detail
 {

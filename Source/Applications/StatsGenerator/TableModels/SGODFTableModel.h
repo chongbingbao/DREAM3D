@@ -39,7 +39,7 @@
 #include <QtCore/QAbstractTableModel>
 #include <QtCore/QVector>
 #include <QtCore/QVariant>
-#include <QtWidgets/QColor>
+#include <QtGui/QColor>
 
 
 class QAbstractItemDelegate;

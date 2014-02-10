@@ -43,7 +43,7 @@
 #include <QtCore/QVector>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QTreeWidgetItem>
-#include <QtWidgets/QCloseEvent>
+#include <QtGui/QCloseEvent>
 #include <QtCore/QSettings>
 
 #include "ui_PluginMaker.h"
@@ -59,7 +59,7 @@ class PluginMaker : public QMainWindow, public Ui::PluginMaker
   protected:
     void setupGui();
 
-	QString generateFileSystemPath(QString);
+  QString generateFileSystemPath(QString);
 
 protected slots:
   void on_selectButton_clicked();

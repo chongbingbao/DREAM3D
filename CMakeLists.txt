@@ -227,48 +227,55 @@ file(WRITE ${DREAM3DProj_BINARY_DIR}/DREAM3DDocGroupList "")
 # ------------------------------------------------------------------------------
 # Find includes in corresponding build directories
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
-# Instruct CMake to run moc automatically when needed.
-set(CMAKE_AUTOMOC ON)
 # Find the QtWidgets library
 find_package(Qt5Core)
 get_target_property(QtCore_location Qt5::Core LOCATION)
 find_package(Qt5Widgets)
+get_target_property(Qt5Widgets_location Qt5::Widgets LOCATION)
 find_package(Qt5Network)
+get_target_property(Qt5Network_location Qt5::Network LOCATION)
+find_package(Qt5Gui)
+get_target_property(Qt5Gui_location Qt5::Gui LOCATION)
+find_package(Qt5Concurrent)
+get_target_property(Qt5Concurrent_location Qt5::Concurrent LOCATION)
 
 if(Qt5Core_FOUND)
-	message(STATUS "Qt5 Found at ${QtCore_location}")
+  message(STATUS "Qt5Core Found at ${QtCore_location}")
+  message(STATUS "Qt5Widgets Found at ${Qt5Widgets_location}")
+  message(STATUS "Qt5Network Found at ${Qt5Network_location}")
+  message(STATUS "Qt5Gui Found at ${Qt5Gui_location}")
 else()
-	message(FATAL_ERROR "Qt Version 5.x was NOT found and is required")
+  message(FATAL_ERROR "Qt Version 5.x was NOT found and is required")
 endif()
 
 include_directories(${Qt5Core_INCLUDE_DIRS})
 
 if(0)
-	# by default only QtCore and QtGui modules are enabled
-	# other modules must be enabled like this:
-	if(WIN32)
-	   set(QT_USE_QTMAIN TRUE)
-	ENDif(WIN32)
+  # by default only QtCore and QtGui modules are enabled
+  # other modules must be enabled like this:
+  if(WIN32)
+     set(QT_USE_QTMAIN TRUE)
+  ENDif(WIN32)
 
-	# this command finds Qt4 libraries and sets all required variables
-	# note that it's Qt4, not QT4 or qt4
-	FIND_PACKAGE( Qt5 REQUIRED )
-	if(QT4_FOUND)
-	   CMP_COPY_QT4_RUNTIME_LIBRARIES( "QtCore;QtGui;QtNetwork")
-	   CMP_QT_LIBRARIES_INSTALL_RULES("QtCore;QtGui;QtNetwork" ".")
-	else()
-	  message(FATAL_ERROR "Qt version 4.7 is REQUIRED to build DREAM3D")
-	endif()
+  # this command finds Qt4 libraries and sets all required variables
+  # note that it's Qt4, not QT4 or qt4
+  FIND_PACKAGE( Qt5 REQUIRED )
+  if(QT4_FOUND)
+     CMP_COPY_QT4_RUNTIME_LIBRARIES( "QtCore;QtGui;QtNetwork")
+     CMP_QT_LIBRARIES_INSTALL_RULES("QtCore;QtGui;QtNetwork" ".")
+  else()
+    message(FATAL_ERROR "Qt version 4.7 is REQUIRED to build DREAM3D")
+  endif()
 
-	set(QT_USE_QTCORE "TRUE")
-	set(QT_USE_QTGUI "TRUE")
-	set(QT_USE_QTNETWORK "TRUE")
+  set(QT_USE_QTCORE "TRUE")
+  set(QT_USE_QTGUI "TRUE")
+  set(QT_USE_QTNETWORK "TRUE")
 
 
-	# add some useful macros and variables
-	# (QT_USE_FILE is a variable defined by FIND_PACKAGE( Qt4 ) that
-	# contains a path to CMake script)
-	INCLUDE( ${QT_USE_FILE} )
+  # add some useful macros and variables
+  # (QT_USE_FILE is a variable defined by FIND_PACKAGE( Qt4 ) that
+  # contains a path to CMake script)
+  INCLUDE( ${QT_USE_FILE} )
 endif()
 
 # Append the locations of the Qt libraries to our Library Search Paths

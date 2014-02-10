@@ -43,10 +43,10 @@
 #include <QtCore/QString>
 #include <QtCore/QSettings>
 #include <QtCore/QVector>
-#include <QtWidgets/QCloseEvent>
+#include <QtGui/QCloseEvent>
 #include <QtWidgets/QMessageBox>
 #include <QtWidgets/QFileDialog>
-#include <QtWidgets/QDesktopServices>
+#include <QtGui/QDesktopServices>
 
 
 #include "H5Support/H5Utilities.h"

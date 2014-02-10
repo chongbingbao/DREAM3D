@@ -60,7 +60,7 @@
 // Our own plugin headers
 #include "ImageImportPlugin/ImageImportPluginFilters/ImportImageStack.h"
 
-#include "ImageImportPlugin/ImageImportPluginFiltersWidgets/moc_QImportImageStackWidget.cxx"
+#include "ImageImportPlugin/ImageImportPluginFiltersWidgets/moc_QImportImageStackWidget.cpp"
 
 // -----------------------------------------------------------------------------
 //

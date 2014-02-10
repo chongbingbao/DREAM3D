@@ -388,7 +388,7 @@ void StatsGenPlotWidget::setupGui()
 
   // Setup the TableView and Table Models
   QHeaderView* headerView = new QHeaderView(Qt::Horizontal, m_TableView);
-  headerView->setResizeMode(QHeaderView::Interactive);
+  headerView->setSectionResizeMode(QHeaderView::Interactive);
   m_TableView->setHorizontalHeader(headerView);
   headerView->show();
 

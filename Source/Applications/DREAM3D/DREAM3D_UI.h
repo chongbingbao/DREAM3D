@@ -47,7 +47,7 @@
 #include <QtCore/QSettings>
 #include <QtWidgets/QWidget>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QResizeEvent>
+#include <QtGui/QResizeEvent>
 #include <QtWidgets/QToolBar>
 
 

@@ -45,14 +45,14 @@
 
 //-- Qt Includes
 #include <QtWidgets/QAbstractItemDelegate>
-#include <QtCore/QtConcurrentMap>
+#include <QtConcurrent/QtConcurrentMap>
 #include <QtCore/QFileInfo>
 #include <QtCore/QFile>
 #include <QtCore/QDir>
 #include <QtCore/QString>
 #include <QtCore/QSettings>
 #include <QtCore/QVector>
-#include <QtWidgets/QCloseEvent>
+#include <QtGui/QCloseEvent>
 #include <QtWidgets/QMessageBox>
 #include <QtWidgets/QFileDialog>
 
@@ -279,7 +279,7 @@ void SGAxisODFWidget::setupGui()
 
   // Setup the TableView and Table Models
   QHeaderView* headerView = new QHeaderView(Qt::Horizontal, m_ODFTableView);
-  headerView->setResizeMode(QHeaderView::Interactive);
+  headerView->setSectionResizeMode(QHeaderView::Interactive);
   m_ODFTableView->setHorizontalHeader(headerView);
   headerView->show();
 

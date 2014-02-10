@@ -37,12 +37,12 @@
 #include <QtCore/QPoint>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QTableWidget>
-#include <QtWidgets/QPixmap>
 #include <QtWidgets/QGraphicsItem>
 #include <QtWidgets/QGraphicsScene>
 #include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QGraphicsPixmapItem>
+#include <QtGui/QPixmap>
 
 
 

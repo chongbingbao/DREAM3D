@@ -37,8 +37,10 @@
 
 #include <QtCore/QDir>
 
-#include <QtWidgets/QDesktopServices>
+
 #include <QtWidgets/QMessageBox>
+
+#include <QtGui/QDesktopServices>
 
 #include "DREAM3DHelpUrlGenerator.h"
 

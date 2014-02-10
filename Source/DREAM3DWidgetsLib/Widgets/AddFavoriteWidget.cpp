@@ -37,7 +37,7 @@
 
 #include "AddFavoriteWidget.h"
 
-#include "DREAM3DWidgetsLib/Widgets/moc_AddFavoriteWidget.cxx"
+#include "DREAM3DWidgetsLib/Widgets/moc_AddFavoriteWidget.cpp"
 
 AddFavoriteWidget::AddFavoriteWidget(QWidget* parent)
 {

@@ -48,7 +48,7 @@
 #include "DREAM3DLib/IOFilters/util/VolumeDataContainerReader.h"
 
 
-#include "DREAM3DLib/IOFiltersWidgets/moc_QDataContainerReaderWidget.cxx"
+#include "DREAM3DLib/IOFiltersWidgets/moc_QDataContainerReaderWidget.cpp"
 
 
 // -----------------------------------------------------------------------------

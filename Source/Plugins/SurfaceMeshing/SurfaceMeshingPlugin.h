@@ -52,7 +52,7 @@
 class SurfaceMeshingPlugin : public QObject, public DREAM3DPluginInterface
 {
     Q_OBJECT
-
+    Q_PLUGIN_METADATA(IID "net.bluequartz.dreamed.SurfaceMeshingPlugin")
     Q_INTERFACES(DREAM3DPluginInterface)
 
   public:

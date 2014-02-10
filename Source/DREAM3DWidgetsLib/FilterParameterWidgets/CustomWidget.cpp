@@ -38,7 +38,7 @@
 #include <QtCore/QMetaProperty>
 
 
-#include "FilterWidgetsLib/Widgets/moc_CustomWidget.cxx"
+#include "FilterWidgetsLib/Widgets/moc_CustomWidget.cpp"
 
 
 // -----------------------------------------------------------------------------

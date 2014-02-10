@@ -39,8 +39,8 @@
 #include <QtCore/QDir>
 #include <QtCore/QFileInfo>
 #include <QtCore/QString>
-#include <QtWidgets/QImage>
-#include <QtWidgets/QColor>
+#include <QtGui/QImage>
+#include <QtGui/QColor>
 
 // -----------------------------------------------------------------------------
 //

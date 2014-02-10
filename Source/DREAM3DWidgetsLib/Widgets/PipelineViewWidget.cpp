@@ -41,13 +41,14 @@
 #include <QtCore/QFileInfo>
 #include <QtCore/QUrl>
 #include <QtCore/QDir>
-#include <QtWidgets/QMouseEvent>
-#include <QtWidgets/QDropEvent>
-#include <QtWidgets/QDragEnterEvent>
-#include <QtWidgets/QDragLeaveEvent>
-#include <QtWidgets/QDragMoveEvent>
+#include <QtCore/QMimeData>
+#include <QtGui/QMouseEvent>
+#include <QtGui/QDropEvent>
+#include <QtGui/QDragEnterEvent>
+#include <QtGui/QDragLeaveEvent>
+#include <QtGui/QDragMoveEvent>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QPixmap>
+#include <QtGui/QPixmap>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QScrollArea>
@@ -66,7 +67,7 @@
 
 #include "QtSupport/QDroppableScrollArea.h"
 
-#include "DREAM3DWidgetsLib/Widgets/moc_PipelineViewWidget.cxx"
+#include "DREAM3DWidgetsLib/Widgets/moc_PipelineViewWidget.cpp"
 
 
 // -----------------------------------------------------------------------------

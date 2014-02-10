@@ -44,12 +44,13 @@
 #include <QtCore/QThread>
 #include <QtCore/QFileInfoList>
 #include <QtCore/QDateTime>
+#include <QtCore/QMimeData>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QFileDialog>
-#include <QtWidgets/QCloseEvent>
+#include <QtGui/QCloseEvent>
 #include <QtWidgets/QMessageBox>
 #include <QtWidgets/QListWidget>
-#include <QtWidgets/QDesktopServices>
+#include <QtGui/QDesktopServices>
 #include <QtWidgets/QToolButton>
 
 //-- DREAM3D Includes

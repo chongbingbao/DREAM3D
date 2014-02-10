@@ -38,7 +38,7 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QDialogButtonBox>
-#include <QtWidgets/QDoubleValidator>
+#include <QtGui/QDoubleValidator>
 #include <QtWidgets/QApplication>
 
 // -----------------------------------------------------------------------------
@@ -109,9 +109,9 @@ void PrimaryRolledPresetDialog::setupGui()
   buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
   verticalLayout_2->addWidget(buttonBox);
 
-  ALabel->setText(QApplication::translate("Rolled Preset Dialog", "A Axis Length:", 0, QApplication::UnicodeUTF8));
-  BLabel->setText(QApplication::translate("Rolled Preset Dialog", "B Axis Length:", 0, QApplication::UnicodeUTF8));
-  CLabel->setText(QApplication::translate("Rolled Preset Dialog", "C Axis Length:", 0, QApplication::UnicodeUTF8));
+  ALabel->setText(QApplication::translate("Rolled Preset Dialog", "A Axis Length:", 0));
+  BLabel->setText(QApplication::translate("Rolled Preset Dialog", "B Axis Length:", 0));
+  CLabel->setText(QApplication::translate("Rolled Preset Dialog", "C Axis Length:", 0));
 
 
   QObject::connect(buttonBox, SIGNAL(accepted()), this, SLOT(accept()));

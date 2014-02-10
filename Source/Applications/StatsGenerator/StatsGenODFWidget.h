@@ -39,7 +39,7 @@
 
 
 #include <QtCore/QFutureWatcher>
-#include <QtWidgets/QImage>
+#include <QtGui/QImage>
 #include <QtWidgets/QWidget>
 
 #include "ui_SGAxisODFWidget.h"

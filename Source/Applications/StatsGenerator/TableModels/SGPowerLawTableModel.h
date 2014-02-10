@@ -39,7 +39,7 @@
 
 #include <QtCore/QVector>
 #include <QtCore/QVariant>
-#include <QtWidgets/QColor>
+#include <QtGui/QColor>
 #include "SGAbstractTableModel.h"
 
 class QAbstractItemDelegate;

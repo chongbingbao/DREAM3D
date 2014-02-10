@@ -11,6 +11,10 @@ if(NOT Qt5Core_FOUND)
     message(FATAL_ERROR "Qt 5 is Needed for this ${PLUGIN_NAME}Plugin.")
 endif()
 
+
+include_directories(${Qt5Widgets_INCLUDE_DIRS})
+include_directories(${Qt5Gui_INCLUDE_DIRS})
+
 set(Project_SRCS "")
 set(Project_HDRS "")
 
@@ -31,6 +35,7 @@ set(QtSupport_SRCS
 )
 
 set(QtSupport_HDRS
+    ${QtSupport_SOURCE_DIR}/DistributionTypeWidget.h
     ${QtSupport_SOURCE_DIR}/AIMImageGraphicsDelegate.h
     ${QtSupport_SOURCE_DIR}/DREAM3DPluginFrame.h
     ${QtSupport_SOURCE_DIR}/ApplicationAboutBoxDialog.h
@@ -99,12 +104,9 @@ if(UNIX AND NOT APPLE)
 set_source_files_properties(${Project_SRCS} PROPERTIES COMPILE_FLAGS -fPIC)
 endif()
 
-add_library(QtSupport STATIC ${Project_SRCS})
-target_link_libraries(QtSupport
-                    ${QT_QTCORE_LIBRARY}
-                    ${QT_QTGUI_LIBRARY}
-                    ${QT_QTNETWORK_LIBRARY}
-                    )
+add_library(QtSupport ${LIB_TYPE} ${Project_SRCS})
+target_link_libraries(QtSupport DREAM3DLib)
+qt5_use_modules(QtSupport Core Widgets Gui)
 
 LibraryProperties( QtSupport ${EXE_DEBUG_EXTENSION})
 

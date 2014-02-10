@@ -45,10 +45,10 @@
 #include <QtCore/QString>
 #include <QtCore/QDebug>
 
-#include <QtWidgets/QPainter>
-#include <QtWidgets/QFont>
-#include <QtWidgets/QImage>
-#include <QtWidgets/QColor>
+#include <QtGui/QPainter>
+#include <QtGui/QFont>
+#include <QtGui/QImage>
+#include <QtGui/QColor>
 
 
 #include "QtSupport/PoleFigureImageUtilities.h"

@@ -38,7 +38,7 @@
 
 #include <QtCore/QObject>
 #include <QtCore/QVector>
-#include <QtWidgets/QImage>
+#include <QtGui/QImage>
 
 #include "DREAM3DLib/DataArrays/DataArray.hpp"
 #include "DREAM3DLib/Utilities/PoleFigureUtilities.h"

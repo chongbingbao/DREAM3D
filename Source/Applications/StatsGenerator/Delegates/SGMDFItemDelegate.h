@@ -40,10 +40,10 @@
 
 #include <QtCore/QModelIndex>
 #include <QtWidgets/QComboBox>
-#include <QtWidgets/QPainter>
+#include <QtGui/QPainter>
 #include <QtWidgets/QStyleOptionViewItemV4>
 #include <QtWidgets/QLineEdit>
-#include <QtWidgets/QDoubleValidator>
+#include <QtGui/QDoubleValidator>
 #include <QtWidgets/QStyledItemDelegate>
 
 #include "DREAM3DLib/Common/StatsGen.hpp"

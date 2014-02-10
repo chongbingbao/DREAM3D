@@ -40,12 +40,9 @@
 #include "DREAM3DLib/Common/IFilterFactory.hpp"
 #include "DREAM3DLib/Common/FilterFactory.hpp"
 
-//#include "PipelineBuilder/FilterWidgetManager.h"
-//#include "FilterWidgets/PipelineFilterWidgetFactory.hpp"
 
-#include "moc_ProcessingPlugin.cxx"
+#include "moc_ProcessingPlugin.cpp"
 
-Q_EXPORT_PLUGIN2(ProcessingPlugin, ProcessingPlugin)
 
 namespace Detail
 {

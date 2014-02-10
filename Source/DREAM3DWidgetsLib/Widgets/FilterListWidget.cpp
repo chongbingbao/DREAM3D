@@ -36,10 +36,12 @@
 
 #include "FilterListWidget.h"
 
-#include <QtWidgets/QMouseEvent>
+#include <QtCore/QMimeData>
+#include <QtGui/QMouseEvent>
+#include <QtGui/QDrag>
 #include <QtWidgets/QApplication>
 
-#include "DREAM3DWidgetsLib/Widgets/moc_FilterListWidget.cxx"
+#include "DREAM3DWidgetsLib/Widgets/moc_FilterListWidget.cpp"
 
 
 // -----------------------------------------------------------------------------

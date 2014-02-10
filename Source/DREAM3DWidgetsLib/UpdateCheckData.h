@@ -38,6 +38,8 @@
 #ifndef _UPDATECHECKDATA_H_
 #define _UPDATECHECKDATA_H_
 
+#include <QtCore/QString>
+#include <QtCore/QObject>
 #include <QtWidgets/QWidget>
 
 #if defined (QT_CORE_LIB)
@@ -48,8 +50,8 @@
 
 
 /**
-*                                                                     
-*/                                                                    
+*
+*/
 class DREAM3DWidgetsLib_EXPORT UpdateCheckData : public QObject
 {
     Q_OBJECT

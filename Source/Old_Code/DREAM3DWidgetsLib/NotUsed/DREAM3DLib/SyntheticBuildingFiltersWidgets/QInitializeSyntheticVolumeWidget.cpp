@@ -63,7 +63,7 @@
 #include "QtSupport/DREAM3DQtMacros.h"
 #include "QtSupport/DREAM3DHelpUrlGenerator.h"
 
-#include "DREAM3DLib/SyntheticBuildingFiltersWidgets/moc_QInitializeSyntheticVolumeWidget.cxx"
+#include "DREAM3DLib/SyntheticBuildingFiltersWidgets/moc_QInitializeSyntheticVolumeWidget.cpp"
 
 
 // -----------------------------------------------------------------------------

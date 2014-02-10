@@ -44,14 +44,14 @@
 
 //-- Qt Includes
 #include <QtWidgets/QAbstractItemDelegate>
-#include <QtCore/QtConcurrentMap>
+#include <QtConcurrent/QtConcurrentMap>
 #include <QtCore/QFileInfo>
 #include <QtCore/QFile>
 #include <QtCore/QDir>
 #include <QtCore/QString>
 #include <QtCore/QSettings>
 #include <QtCore/QVector>
-#include <QtWidgets/QCloseEvent>
+#include <QtGui/QCloseEvent>
 #include <QtWidgets/QMessageBox>
 #include <QtWidgets/QFileDialog>
 

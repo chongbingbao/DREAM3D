@@ -46,10 +46,10 @@
 #include <QtCore/QDir>
 #include <QtCore/QFile>
 
-#include <QtWidgets/QPainter>
-#include <QtWidgets/QFont>
-#include <QtWidgets/QImage>
-#include <QtWidgets/QColor>
+#include <QtGui/QPainter>
+#include <QtGui/QFont>
+#include <QtGui/QImage>
+#include <QtGui/QColor>
 
 #include "EbsdLib/EbsdLib.h"
 #include "EbsdLib/TSL/AngReader.h"

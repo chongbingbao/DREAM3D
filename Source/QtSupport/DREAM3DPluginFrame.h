@@ -38,11 +38,12 @@
 #define _AIM_PLUGIN_FRAME_H_
 
 #include <QtCore/QObject>
-#include <QtCore/QString>
-#include <QtWidgets/QFrame>
 #include <QtCore/QSettings>
+#include <QtCore/QString>
+
+#include <QtWidgets/QFrame>
 #include <QtWidgets/QStatusBar>
-#include <QtWidgets/QIcon>
+#include <QtGui/QIcon>
 #include <QtWidgets/QMessageBox>
 
 #include "DREAM3DLib/Common/PipelineMessage.h"

@@ -184,6 +184,8 @@ COMPILE_TOOL(
     INSTALL_DEST  "${install_dir}"
     LINK_LIBRARIES ${QT_QTGUI_LIBRARY}
 )
+qt5_use_modules(ModifiedLambertTest Core Widgets Gui)
+
 
 
 # --------------------------------------------------------------------

@@ -1,7 +1,7 @@
 #include "QFilterParameterWidget.h"
 
 
-#include "FilterWidgetsLib/moc_QFilterParameterWidget.cxx"
+#include "FilterWidgetsLib/moc_QFilterParameterWidget.cpp"
 
 // -----------------------------------------------------------------------------
 //

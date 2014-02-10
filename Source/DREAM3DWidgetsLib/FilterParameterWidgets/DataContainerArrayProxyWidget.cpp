@@ -38,7 +38,7 @@
 #include <QtCore/QMetaProperty>
 
 
-#include "DREAM3DWidgetsLib/FilterParameterWidgets/moc_DataContainerArrayProxyWidget.cxx"
+#include "DREAM3DWidgetsLib/FilterParameterWidgets/moc_DataContainerArrayProxyWidget.cpp"
 
 
 // -----------------------------------------------------------------------------

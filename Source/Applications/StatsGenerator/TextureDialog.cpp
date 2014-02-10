@@ -36,7 +36,7 @@
 
 #include "TextureDialog.h"
 
-#include <QtWidgets/QDoubleValidator>
+#include <QtGui/QDoubleValidator>
 
 // -----------------------------------------------------------------------------
 //

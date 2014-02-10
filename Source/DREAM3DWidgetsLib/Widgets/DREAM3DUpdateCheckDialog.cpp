@@ -44,7 +44,7 @@
 #include <QtCore/QDir>
 #include <QtCore/QDate>
 
-#include <QtWidgets/QDesktopServices>
+#include <QtGui/QDesktopServices>
 
 #include <QtNetwork/QNetworkAccessManager>
 #include <QtNetwork/QNetworkRequest>
@@ -52,7 +52,7 @@
 
 #include "DREAM3DWidgetsLib/UpdateCheckData.h"
 
-#include "DREAM3DWidgetsLib/Widgets/moc_DREAM3DUpdateCheckDialog.cxx"
+#include "DREAM3DWidgetsLib/Widgets/moc_DREAM3DUpdateCheckDialog.cpp"
 
 namespace Detail
 {

@@ -48,7 +48,7 @@
 #include "QtSupport/DREAM3DQtMacros.h"
 #include "QtSupport/DREAM3DHelpUrlGenerator.h"
 
-#include "DREAM3DLib/IOFiltersWidgets/moc_QReadH5EbsdWidget.cxx"
+#include "DREAM3DLib/IOFiltersWidgets/moc_QReadH5EbsdWidget.cpp"
 
 // -----------------------------------------------------------------------------
 //

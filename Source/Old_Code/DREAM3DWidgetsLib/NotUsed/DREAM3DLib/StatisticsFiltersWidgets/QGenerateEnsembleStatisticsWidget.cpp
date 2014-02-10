@@ -44,7 +44,7 @@
 
 #include "DREAM3DLib/Common/PhaseType.h"
 
-#include "DREAM3DLib/StatisticsFiltersWidgets/moc_QGenerateEnsembleStatisticsWidget.cxx"
+#include "DREAM3DLib/StatisticsFiltersWidgets/moc_QGenerateEnsembleStatisticsWidget.cpp"
 
 // -----------------------------------------------------------------------------
 //
